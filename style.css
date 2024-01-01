@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: transparent;
+
+}
+
+
+nav{
+  position: sticky;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  background-image:url('./Assets/svg.svg') ;
+  width: 100%;
+  margin-right: 0%;
+  box-shadow: 0 1px 10px white;
+
+
+}
+nav ul{
+  width:100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+  
+}
+a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fafafa;
+  transition: -0.2s ease;
+}
+
+nav a:hover{
+  color:rgb(42, 122, 42);
+ 
+}
+nav li:first-child{
+  margin-right: auto;
+}
+img{
+  width:30px;
+}
+.sidebar{
+  top:0;
+  right: 0;
+  width:250px;
+  z-index: 999;
+  background-color: #ffffff52;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width:100%;
+}
+.menuButton{
+  display: none;
+}
+
+
+
+.main{
+  padding-top: -35%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url('./Assets/svg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.main img{
+  width: 200px;
+  background-size: cover;
+  background: transparent;
+}
+.right{
+  padding: 40px;
+  background-color: transparent;
+}
+.left{
+  padding: 40px;
+  background-color: transparent;
+}
+ p,h1,h2{
+  background-color: transparent;
+  color: #f7f5fb;
+}
+.circle-icon {
+  height: 0px;
+}
+
+
+.circle-icon img{
+  width: 50px;
+}
+.social li{
+  list-style: none;
+}
+
+.social  {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: transparent;
+}
+
+@media (max-width:800px){
+  .main{
+    flex-direction: column;
+  }
+ 
+  .left{
+    width:100%;
+    padding:5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+}
+@media (max-width:800px) {
+  .hideOnMobile{
+    display:none;
+  }
+  .menuButton{
+    display: block;
+  }
+  
+}
+@media (max-width:400px) {
+  .sidebar{
+    width: 100%;
+  }
+  
+}
