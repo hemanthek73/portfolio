@@ -5,15 +5,22 @@
   background: transparent;
 
 }
-
+.conatiner{
+  width: 100vw;
+  margin-bottom: 0px;
+  margin: 0%;
+  padding: 0%;
+}
+html{
+  overflow: hidden;
+}
 
 nav{
-  position: sticky;
+ 
   box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
   background-image:url('./Assets/svg.svg') ;
-  width: 100%;
-  margin-right: 0%;
   box-shadow: 0 1px 10px white;
+
 
 
 }
@@ -23,6 +30,9 @@ nav ul{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #ffffff41;
+  backdrop-filter: blur(1px);
+ 
 }
 nav li{
   height: 50px;
@@ -35,7 +45,7 @@ a{
   display: flex;
   align-items: center;
   color: #fafafa;
-  transition: -0.2s ease;
+  transition: all -0.2s ease;
 }
 
 nav a:hover{
@@ -49,6 +59,7 @@ img{
   width:30px;
 }
 .sidebar{
+  position: fixed;
   top:0;
   right: 0;
   width:250px;
@@ -71,22 +82,22 @@ img{
   display: none;
 }
 
-
-
 .main{
-  padding-top: -35%;
+  position: relative;
+  margin-top: 0;
   padding-left: 5%;
   padding-right: 5%;
   background-image: url('./Assets/svg.svg');
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
+  width: 90vw;
   background-size: cover;
   z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
  
 }
 .main img{
@@ -101,6 +112,7 @@ img{
 .left{
   padding: 40px;
   background-color: transparent;
+  
 }
  p,h1,h2{
   background-color: transparent;
@@ -108,6 +120,13 @@ img{
 }
 .circle-icon {
   height: 0px;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 10px;
 }
 
 
@@ -127,20 +146,30 @@ img{
 }
 
 @media (max-width:800px){
+  nav{
+    width: 100%;
+  }
   .main{
     flex-direction: column;
+  }
+  .circle-icon img{
+    width: 30px;
   }
  
   .left{
     width:100%;
     padding:5px;
-    margin: 5px;
+    margin: 5%;
     display: flex;
     flex-direction: column;
    
   }
-}
-@media (max-width:800px) {
+  .sidebar{
+    width: 50%;
+  }
+  .left a{
+    padding: 7px;
+  }
   .hideOnMobile{
     display:none;
   }
@@ -149,9 +178,4 @@ img{
   }
   
 }
-@media (max-width:400px) {
-  .sidebar{
-    width: 100%;
-  }
-  
-}
+

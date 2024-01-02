@@ -10,19 +10,19 @@
  <div class="container">
    <nav>
      <ul class='sidebar'>
-     <li onclick=hideSidebar()><a href="/"><img src='./Assets/close.png' alt='close'></img></a></li>
+     <li onclick=hideSidebar()><img class='btn' src='./Assets/close.png' alt='close'></img></li>
        <li><a href="/">skills</a></li>
        <li><a href="/">projects</a></li>
        <li><a href="/">certificates</a></li>
        <li ><a href="/">about</a></li>
      </ul>
      <ul >
-     <li><a href="/">portfolio</a></li>
+     <li><a href="index.html" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:1.2rem;">portfolio</a></li>
        <li class='hideOnMobile'><a href="/">skills</a></li>
        <li class='hideOnMobile'><a href="/">projects</a></li>
        <li class='hideOnMobile'><a href="/">certificates</a></li>
        <li class='hideOnMobile'><a href="/">about</a></li>
-       <li class='menuButton' onclick=showSidebar()><a href="/"><img src='./Assets/m.png' alt='menu' style="background-color:rgba(255, 255, 255, 0.711)" ></img></a></li>
+       <li class='menuButton'  onclick=showSidebar()><img class='btn' src='./Assets/m.png' alt='menu' style="  width:25px" ></img></li>
      </ul>
      </nav>
     </div>
@@ -35,10 +35,10 @@
         <h1>Am Hemanth.</h1>
         <p>I am a front end developer with experience in building web applications using HTML,CSS, JAVASCRIPT and REACT. Currently</p>
         <ul class='social'>
-        <li><a href="/" class="circle-icon" target='_blank'><img src='./Assets/linkedin.png' alt='linkedin'></img></a></li>
-        <li><a href="/https://www.facebook.com/hemanthgowda.hemanthgowda.9?mibextid=ZbWKwL" class="circle-icon" target='_blank'><img src='./Assets/face.png' alt='facebook'></img></a></li>
-        <li><a href="/" class="circle-icon" target='_blank'><img src='./Assets/insta.png' alt='insta'></img></a></li>
-        <li><a href="/" class="circle-icon" target='_blank'><img src='./Assets/git.png' alt='git'></img></a></li>
+        <li><a href="https://www.linkedin.com/in/hemantha-kumara-e-k-746563261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="circle-icon" target='_self'><img src='./Assets/linkedin.png' alt='linkedin'></img></a></li>
+        <li><a href="https://www.facebook.com/hemanthgowda.hemanthgowda.9?mibextid=ZbWKwL" class="circle-icon" target='_self'><img src='./Assets/face.png' alt='facebook'></img></a></li>
+        <li><a href="https://www.instagram.com/hemanth_ek?igsh=MTk1YzM5OGw5aHJ3eQ==" class="circle-icon" target='_self'><img src='./Assets/insta.png' alt='insta'></img></a></li>
+        <li><a href="https://github.com/hemanthek73" class="circle-icon" target='_self'><img src='./Assets/git.png' alt='git'></img></a></li>
       </ul>
       </div>
  </div>
@@ -49,10 +49,10 @@
   function showSidebar(){
   const sidebar=document.querySelector('.sidebar')
   sidebar.style.display='flex'
-}
+};
 function hideSidebar(){
   const sidebar=document.querySelector('.sidebar')
   sidebar.style.display='none'
-}
+};
 </script>
 </html>
