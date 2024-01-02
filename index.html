@@ -7,41 +7,175 @@
   <title>portfolio</title>
 </head>
 <body>
- <div class="container">
-   <nav>
-     <ul class='sidebar'>
-     <li onclick=hideSidebar()><img class='btn' src='./Assets/close.png' alt='close'></img></li>
-       <li><a href="/">skills</a></li>
-       <li><a href="/">projects</a></li>
-       <li><a href="/">certificates</a></li>
-       <li ><a href="/">about</a></li>
-     </ul>
-     <ul >
-     <li><a href="index.html" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:1.2rem;">portfolio</a></li>
-       <li class='hideOnMobile'><a href="/">skills</a></li>
-       <li class='hideOnMobile'><a href="/">projects</a></li>
-       <li class='hideOnMobile'><a href="/">certificates</a></li>
-       <li class='hideOnMobile'><a href="/">about</a></li>
-       <li class='menuButton'  onclick=showSidebar()><img class='btn' src='./Assets/m.png' alt='menu' style="  width:25px" ></img></li>
-     </ul>
-     </nav>
+  <div class="hole">
+
+    <div class="container">
+     <div class="nav">
+       <nav>
+         <ul class='sidebar'>
+         <li onclick=hideSidebar()><img class='btn' src='./Assets/close.png' alt='close'></img></li>
+           <li><a href="#skills">skills</a></li>
+           <li><a href="#projects">projects</a></li>
+           <li><a href="#certificates">certificates</a></li>
+           <li><a href="/">Internships</a></li>
+           <li ><a href="#about">about</a></li>
+         </ul>
+         <ul >
+         <li><h3 href="index.html" style="display: flex;align-items: center;justify-content: center;color:white;padding-left: 15px;padding-top: 10px;">portfolio</h3></li>
+           <li class='hideOnMobile'><a href="#skills">skills</a></li>
+           <li class='hideOnMobile'><a href="#projects">projects</a></li>
+           <li class='hideOnMobile'><a href="#certificates">certificates</a></li>
+           <li class='hideOnMobile'><a href="/">Internships</a></li>
+           <li class='hideOnMobile'><a href="#about">about</a></li>
+           <li class='menuButton'  onclick=showSidebar()><img class='btn' src='./Assets/menu (2).png'  alt='menu' style="  width:25px;box-shadow: 0px 1px 10px white;" ></img></li>
+         </ul>
+         </nav>
+     </div>
+     
+       <div class='main'>
+         <div class='right'>
+           <img src='./Assets/i.png' alt="Me" class='profile-pic' style="width: 250px; " />
+         </div>
+         <div class='left'>
+           <h2>Hi there!  </h2>
+           <div class="my">
+             <h1 class="text">I Am <span style="color:rgb(237, 148, 13)">Hemanth</span> </h1>
+           </div>
+           <p>I am a front end developer with experience in building web applications using HTML,CSS, JAVASCRIPT and REACT. Currently</p>
+           <a href="./Assets//myCV.pdf" target="_self" download="mycv">download <img src="./Assets/download_FILL0_wght400_GRAD0_opsz24.png" alt="download" />  </a>
+         
+         </div>
     </div>
-    <div class='main'>
-      <div class='right'>
-        <img src='./Assets/me1.png' alt="Me" id='profile-pic' />
+    </div>
+    <section id="skills">
+    <div class="skills" style="color:aliceblue">
+     <h3>skills</h3>
+     <div class="skills-list">
+       <span>HTML5</span>
+       <span>CSS3</span>
+       <span>JAVASCRIPT</span>
+       <span>REACT</span>
+       <span>PYTHON</span>
+       <span>MS EXCEL</span>
+       <span>MS POWER POINT</span>
+       <span>GIT AND GITHUB</span>
+       <span>CANVA DESIGN</span>
+       <span>CHATGPT</span>
+     </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="projects">
+      <h3>Projects</h3>
+      <div class="project-list">
+        <div class="project">
+         
+          <h4>E-commerce app</h4>
+          <a href="https://hemanthek73.github.io/store/shop.html">
+          <img src="Assets/shoping.jpg" alt="">
+          <span>view app</span>
+         
+        </a>
+        <p>A simple E-Commerce website built using html and css</p>
+        </div>
+        <div class="project">
+          <h4>Weather app</h4>
+          <a href="https://hemanthek73.github.io/new-wearther-app/">
+          <img src="Assets/brian-mcgowan-kKyxIwvljBg-unsplash.jpg" alt="">
+          <span>view app</span>
+        </a>
+        <p>A simple weather app using html,css,js and api</p>
+        </div>
+        <div class="project">
+          <h4>Youtube clone</h4>
+          <a href="https://hemanthek73.github.io/youtube-clone/">
+          <img src="Assets/alexander-shatov-niUkImZcSP8-unsplash.jpg" alt="">
+          <span>view app</span>
+        </a>
+        <p>youtube clone using html,css and javascript</p>
+        </div>
       </div>
-      <div class='left'>
-        <h2>Hi there! I </h2>
-        <h1>Am Hemanth.</h1>
-        <p>I am a front end developer with experience in building web applications using HTML,CSS, JAVASCRIPT and REACT. Currently</p>
+      
+    </div>
+
+  </section>
+  <section id="certificates">
+    <div class="projects" id="certificate">
+      <h3>certificates</h3>
+      <div class="project-list" id="certificate-list">
+      <div class="project" id="certificate-fix">
+        <p class="p">html and css</p>
+        <a href="Assets/html.pdf"><img src="Assets/html.jpg" alt=""><span>view certificate</span> </a>
+        <p>Issued by let'supgrade</p>
+      </div>
+      <div class="project" id="certificate-fix">
+        <p class="p">javascript</p>
+        <a href="Assets/js.jpg"><img src="Assets/js.jpg" alt=""><span>view certificate</span></a>
+        <p>Issued by learntube</p>
+      </div>
+      <div class="project" id="certificate-fix">
+        <p class="p">React basic</p>
+        <a href="Assets/react.pdf"><img src="Assets/react.png" alt=""><span>view certificate</span></a>
+        <p>Issued by let'supgrade</p>
+      </div>
+      <div class="project" id="certificate-fix">
+        <p class="p">python</p>
+        <a href="Assets/guvi python.jpg"><img src="Assets/guvi python.jpg" alt=""><span>view certificate</span></a>
+        <p>Issued by GUVI Geeks Networks</p>
+      </div>
+      <div class="project" id="certificate-fix">
+        <p class="p">Introduction to frontend development</p>
+        <a href="Assets/skillup Front.pdf"><img src="Assets/simple.png" alt=""><span>view certificate</span></a>
+        <p>Issued by simplilearn</p>
+      </div>
+      <div class="project" id="certificate-fix">
+        <p class="p">git and github</p>
+        <a href="Assets/github.png"><img src="Assets/github.png" alt=""><span>view certificate</span></a>
+        <p>Issued by let'supgrade</p>
+      </div>
+      <div class="project" id="certificate-fix">
+        <p class="p">prompt engineering</p>
+        <a href="Assets/prompt.pdf"><img src="Assets/prompt.png" alt=""><span>view certificate</span></a>
+        <p>Issued by let'supgrade</p>
+      </div>
+    
+    <div class="project" id="certificate-fix">
+      <p class="p">basic of sql</p>
+      <a href="Assets/sql.pdf"><img src="Assets/sql.png" alt=""><span>view certificate</span></a>
+      <p>Issued by let'supgrade</p>
+    </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section id="about">
+    <div class="about">
+      <h3>about Me</h3>
+      <div class="personal" style="color:white">
+        <h3>HEMANTHA KUMARA E K</h3>
+        <P>I am pursuing my Bachelor's  Engineering with a specialization in Computer Science and Engineering</P>
+        <p>gpa            :   8.5</p>
+        <P>10TH percentage:   76%</P>
+        <p>12IH percentage:   75%</p>
+      </div>
+      <div class="copy" style="color:white">
         <ul class='social'>
-        <li><a href="https://www.linkedin.com/in/hemantha-kumara-e-k-746563261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="circle-icon" target='_self'><img src='./Assets/linkedin.png' alt='linkedin'></img></a></li>
-        <li><a href="https://www.facebook.com/hemanthgowda.hemanthgowda.9?mibextid=ZbWKwL" class="circle-icon" target='_self'><img src='./Assets/face.png' alt='facebook'></img></a></li>
-        <li><a href="https://www.instagram.com/hemanth_ek?igsh=MTk1YzM5OGw5aHJ3eQ==" class="circle-icon" target='_self'><img src='./Assets/insta.png' alt='insta'></img></a></li>
-        <li><a href="https://github.com/hemanthek73" class="circle-icon" target='_self'><img src='./Assets/git.png' alt='git'></img></a></li>
-      </ul>
+            <li><a href="https://www.linkedin.com/in/hemantha-kumara-e-k-746563261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="circle-icon" target='_self'><img src='./Assets/linkedin.png' alt='linkedin'></img></a></li>
+            <li><a href="https://www.facebook.com/hemanthgowda.hemanthgowda.9?mibextid=ZbWKwL" class="circle-icon" target='_self'><img src='./Assets/face.png' alt='facebook'></img></a></li>
+            <li><a href="https://www.instagram.com/hemanth_ek?igsh=MTk1YzM5OGw5aHJ3eQ==" class="circle-icon" target='_self'><img src='./Assets/insta.png' alt='insta'></img></a></li>
+            <li><a href="https://github.com/hemanthek73" class="circle-icon" target='_self'><img src='./Assets/git.png' alt='git'></img></a></li>
+          </ul> 
+          <p style="margin-top: 30px;">Email  : hemanthek73@gmail.com</p>
+          <p>contact: 7348916159</p>
+          <hr>
+            <p style="margin-top: 30px;">&#169;  Designed By Hemanthakumar Ek | All rights reserved</p>
+         
       </div>
- </div>
+    </div>
+
+  </section>
+  </div>
+
   
   
 </body>
