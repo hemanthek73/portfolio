@@ -111,17 +111,19 @@ img{
 }
 
 .profile-pic{
-  border-radius: 50% 10% 30%;
+  border-radius: 30% 10% ;
   border: 4px solid rgb(42, 45, 69);
   box-shadow: 0 1px 10px white;
   
+  
+  
 }
 .right{
-  background-image: url("Assets/mountains-gbae9d3f7f_1280.jpg");
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 50% 10% 30%;
+ 
 }
 
 
@@ -480,8 +482,9 @@ hr{
  
 }
   a span{
+    border-radius: 0%;
   color:white;
-  border-bottom: 2px solid rgb(220, 200, 139);
+  border-bottom: 3px solid rgb(144, 141, 134);
   margin-bottom: 10px;
 }
 a span:hover{
