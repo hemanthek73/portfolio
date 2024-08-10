@@ -111,7 +111,7 @@ img{
 }
 
 .profile-pic{
-  border-radius: 30% 10% ;
+  border-radius: 20% 10% ;
   border: 4px solid rgb(42, 45, 69);
   box-shadow: 0 1px 10px white;
   
@@ -231,7 +231,7 @@ img{
 }
 
 .skills-list span {
-  text-transform: lowercase;
+  text-transform: uppercase;
   margin-right: 10px; 
   background-color: rgba(21, 19, 81, 0.781);
   color: rgb(239, 246, 245);
